@@ -19,9 +19,11 @@ if [ ! -d "${ROOT_DIR}" ]; then
 fi
 
 cd ${ROOT_DIR};
+pwd;
 
 if [ ! -f "phpdoc.xml" ] && [ ! -f "phpdoc.dist.xml" ]; then
-  echo "\nPlease create ${ROOT_DIR}/phpdoc.xml file"
+  echo "\nPlease create phpdoc.xml or phpdoc.dist.xml file"
+  ls *.xml;
   echo "\n\n"
   exit 2
 fi
