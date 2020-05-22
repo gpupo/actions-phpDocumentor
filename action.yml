@@ -1,5 +1,5 @@
 name: 'Documentation Generator for PHP with phpDocumentor'
-description: 'phpDocumentor is an application that is capable of analyzing your PHP source code and DocBlock comments to generate a complete set of API Documentation'
+description: 'analyzing your PHP source code and DocBlock comments to generate API Documentation'
 branding:
   icon: 'check-circle'
   color: 'green'
