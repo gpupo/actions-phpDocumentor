@@ -1,0 +1,15 @@
+name: 'Documentation Generator for PHP with phpDocumentor'
+description: 'phpDocumentor is an application that is capable of analyzing your PHP source code and DocBlock comments to generate a complete set of API Documentation'
+branding:
+  icon: 'check-circle'
+  color: 'green'
+inputs:
+  dir:
+    description: 'Root directory of the project'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dir }}
